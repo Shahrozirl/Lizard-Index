@@ -1,0 +1,10 @@
+body{
+  background-color: lightskyblue;
+}
+.hide{
+  background-color: blueviolet;
+  border-radius: 5px;
+  text-align: center;
+  position: absolute;
+  margin: 0 auto;
+}
