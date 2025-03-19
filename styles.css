@@ -20,7 +20,7 @@ img {
 
 .map-container {
   width: 80%;  /* Adjust as needed */
-  max-width: 600px;  /* Prevents it from getting too large */
+  max-width: 100%;  /* Prevents it from getting too large */
   margin: 20px auto; /* Centers the container */
   border: 2px solid black; /* Just to see the boundary */
   display: flex;
