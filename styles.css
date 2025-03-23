@@ -319,3 +319,36 @@ input[type="submit"]:hover {
 .copyright-text {
   margin: 10px 0 0;
 }
+
+ul.gear-list {
+  padding-left: 20px;
+  list-style-type: disc; /* bullet points */
+}
+
+ul.gear-list li {
+  margin-bottom: 8px; /* space between items */
+  line-height: 2;
+}
+
+body.lizard {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  color: #333;
+}
+h1, h2 {
+  color: #b26e00;
+}
+ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+li {
+  margin-bottom: 6px;
+}
+section {
+  margin-bottom: 40px;
+}
