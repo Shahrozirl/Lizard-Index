@@ -5,20 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | The Watch Vault </title>
     <link rel="stylesheet" href="styles.css">
-    <script src = 'script.js'></script>
+    <script src = 'script.js'>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("open");
+    }
+    </script>
 </head>
 <body>
   <!-- Top Banner -->
     <div class="top-banner">
     <img class="logo" src="C:\Users\Shahroz Khalid\OneDrive - Dublin & Dun Laoghaire Education Training Board\Web Authoring\Images\d5652467-95d4-4195-b69b-e470dd2c607f_removalai_preview1.png">
     </div>
-    <div class="navbar">
-      <button onclick="location.href='index.html'">Home</button>
-      <button onclick="location.href='species.html'">Species</button>
-      <button onclick="location.href='gallery.html'">Gallery</button>
-      <button onclick="location.href='about.html'">About</button>
-      <button onclick="location.href='contact.html'">Contact</button>
-    </div>
+<!-- Navigation Bar -->
+    <header class="navbar">
+      <div class="logo">REPTI</div>
+      <nav class="nav-links" id="navLinks">
+        <a href="#">Home</a>
+        <a href="#">Species</a>
+        <a href="#">Care Sheets</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="hamburger" onclick="toggleMenu()">
+        &#9776; <!-- Unicode for hamburger icon -->
+      </div>
+    </header>
     <div class="container-home">
         <div class="column column-side1"></div>
         <div class="column column-main">

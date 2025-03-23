@@ -52,27 +52,70 @@ img {
 }
 .navbar {
   display: flex;
-  justify-content: center; /* or space-around / space-between */
-  background-color: #222; /* Dark background */
-  padding: 10px 0;
-}
-
-.navbar button {
-  background-color: transparent;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #2f2f2f;
   color: white;
-  border: none;
-  padding: 10px 20px;
-  margin: 0 10px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background 0.3s, color 0.3s;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.navbar button:hover {
-  background-color: #444;
-  color: #ffcc00; /* Change to any hover color you like */
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
 }
-/*column for home page*/
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #a6ff4d;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Slide Menu (for mobile) */
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 220px;
+    height: 100%;
+    background-color: #2f2f2f;
+    flex-direction: column;
+    padding-top: 60px;
+    gap: 30px;
+    transition: left 0.3s ease;
+  }
+
+  .nav-links.open {
+    left: 0;
+  }
+
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1100;
+  }
+}/*column for home page*/
 .column-side1 {
   flex: 18%;
   position: relative; /*Needed for absolute positioning of text and images*/
