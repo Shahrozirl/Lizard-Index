@@ -50,6 +50,28 @@ img {
   font-size: 1.8rem;
   font-weight: bold;
 }
+.navbar {
+  display: flex;
+  justify-content: center; /* or space-around / space-between */
+  background-color: #222; /* Dark background */
+  padding: 10px 0;
+}
+
+.navbar button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar button:hover {
+  background-color: #444;
+  color: #ffcc00; /* Change to any hover color you like */
+}
 /*column for home page*/
 .column-11 {
   flex: 18%;
@@ -67,7 +89,7 @@ img {
   overflow: hidden; /* Prevents child elements from overflowing */
 }
 .column-33 {
-  flex: 10%;
+  flex: 17%;
   /*background-color: #e74c3c;*/
   position: relative; /* Needed for absolute positioning of text and images */
   display: flex;
@@ -76,7 +98,7 @@ img {
   overflow: hidden; /* Prevents child elements from overflowing */
 }
 .column-44 {
-  flex: 27%;
+  flex: 20%;
   /*background-color: #e74c3c;*/
   position: relative; /* Needed for absolute positioning of text and images */
   display: flex;
