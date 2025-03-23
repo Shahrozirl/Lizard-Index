@@ -18,7 +18,7 @@ img {
   margin-bottom: 5px;
 }
 .logo{
-  height: 20px;
+  max-height: 100%;
 }
 
 .map-container {
@@ -42,6 +42,7 @@ img {
 }
 /* Top Banner */
 .top-banner {
+  height: 200px;
   background-color: #4e6835;
   color: white;
   text-align: center;
