@@ -17,6 +17,9 @@ img {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+.logo{
+  height: 20px;
+}
 
 .map-container {
   width: 80%;  /* Adjust as needed */
@@ -36,6 +39,15 @@ img {
   display: flex; /*Enable Flexbox*/
   gap: 10px; /*Add spacing between columns*/
   padding: 20px;
+}
+/* Top Banner */
+.top-banner {
+  background-color: #4e6835;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 /*column for home page*/
 .column-11 {
