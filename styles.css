@@ -37,7 +37,7 @@ img {
 }
 .container-home {
   display: flex; /*Enable Flexbox*/
-  gap: 10px; /*Add spacing between columns*/
+  gap: 40px; /*Add spacing between columns*/
   padding: 20px;
 }
 /* Top Banner */
@@ -73,7 +73,7 @@ img {
   color: #ffcc00; /* Change to any hover color you like */
 }
 /*column for home page*/
-.column-11 {
+.column-side1 {
   flex: 18%;
   position: relative; /*Needed for absolute positioning of text and images*/
   display: flex;
@@ -81,14 +81,14 @@ img {
   align-items: center; /*Centers horizontally because its a column*/
   overflow: hidden; /* Prevents child elements from overflowing */
 }
-.column-22 {
+.column-main {
   flex: 45%;
   background-color: #ffffff48;
   display: flex;
   flex-direction: column;
   overflow: hidden; /* Prevents child elements from overflowing */
 }
-.column-33 {
+.column-author {
   flex: 17%;
   /*background-color: #e74c3c;*/
   position: relative; /* Needed for absolute positioning of text and images */
@@ -97,7 +97,44 @@ img {
   align-items: center; /* Centers horizontally */
   overflow: hidden; /* Prevents child elements from overflowing */
 }
-.column-44 {
+.definition strong {
+  font-weight: bold;
+  font-size: 16px;
+}
+.definition p {
+  margin: 5px 0;
+}
+.divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #63a43c;
+  display: inline-block;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+.author-image {
+  text-align: center;
+  margin: 20px 0;
+}
+.author-image img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #63a43c;
+}
+.author-text p {
+  margin-bottom: 15px;
+  text-align: left; /* makes all text align left */
+}
+
+.column-side2 {
   flex: 20%;
   /*background-color: #e74c3c;*/
   position: relative; /* Needed for absolute positioning of text and images */
