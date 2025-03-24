@@ -369,3 +369,18 @@ section {
   height: 100%;
   border: none;
 }
+
+@media screen and (max-width: 768px) {
+  .column-side1, .column-side2 {
+    display: none;
+  }
+
+  .container-home {
+    flex-direction: column; /* stacks remaining columns */
+  }
+
+  .column-main,
+  .column-author {
+    width: 100%; /* full width on mobile */
+  }
+}
