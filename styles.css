@@ -324,11 +324,12 @@ input[type="submit"]:hover {
 
 ul.gear-list {
   padding-left: 20px;
-  list-style-type: disc; /* bullet points */
+  list-style-type: disc;
 }
 
 ul.gear-list li {
-  margin-bottom: 8px; /* space between items */
+  margin-top: 8px;
+  margin-bottom: 8px;
   line-height: 2;
 }
 
@@ -353,4 +354,18 @@ li {
 }
 section {
   margin-bottom: 40px;
+}
+.embed {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.embed iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
