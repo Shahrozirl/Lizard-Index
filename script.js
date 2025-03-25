@@ -1,8 +1,10 @@
+// side anvigation
 function toggleMenu() {
   const menu = document.getElementById("sideNav");
   menu.classList.toggle("open");
 }
 
+// for working form
 const serviceID = "service_pvaz9jx";
 const templateID = "TQnTKivGdFVOB_yY0";
 const publicKey = "TQnTKivGdFVOB_yY0";
